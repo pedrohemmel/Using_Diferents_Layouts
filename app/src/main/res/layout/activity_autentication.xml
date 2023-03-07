@@ -59,7 +59,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupShift"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail">
@@ -77,6 +77,35 @@
             android:text="@string/check_phone_number" />
     </LinearLayout>
 
+    <RadioGroup
+        android:id="@+id/radioGroupShift"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toTopOf="@id/btnRegister"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutCheckers">
+        <RadioButton
+            android:id="@+id/morningRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/morning"/>
+        <RadioButton
+            android:id="@+id/afternoonRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/afternoon"/>
+        <RadioButton
+            android:id="@+id/nightRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/night"/>
+    </RadioGroup>
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
@@ -87,6 +116,6 @@
         android:text="@string/verify"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCheckers" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupShift" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
