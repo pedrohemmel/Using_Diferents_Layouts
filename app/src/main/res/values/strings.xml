@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Using_Diferents_Layouts</string>
+    <string name="phone_number">Phone number</string>
+    <string name="name">Name</string>
+    <string name="check_e_mail">Check e-mail</string>
+    <string name="verify">Verify</string>
+    <string name="check_phone_number">Check phone number</string>
+    <string name="e_mail">E-mail</string>
+</resources>
